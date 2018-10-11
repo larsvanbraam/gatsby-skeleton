@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: 'Gatsby Skeleton',
+    description: 'A gatsby skeleton'
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -16,7 +16,9 @@ module.exports = {
         icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
       },
     },
+    'gatsby-plugin-react-helmet',
     'gatsby-plugin-offline',
+    'gatsby-plugin-emotion',
     'gatsby-plugin-typescript',
   ],
 };
