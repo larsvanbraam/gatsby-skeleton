@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import IndexLayout from '../layouts/index/IndexLayout';
 import classNames from 'classnames';
 import style from './index.module.scss';
