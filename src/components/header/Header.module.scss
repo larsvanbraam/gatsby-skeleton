@@ -1,0 +1,7 @@
+.header {
+  @include size(100%, 5rem);
+  background: $colorHighlight;
+  color: $colorSecondary;
+  line-height: 5rem;
+  padding: 0 1rem;
+}

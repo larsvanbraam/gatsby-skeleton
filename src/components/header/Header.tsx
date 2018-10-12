@@ -1,14 +1,13 @@
 import * as React from 'react';
-import { Link } from 'gatsby';
-import { HeaderProps } from './HeaderProps';
 
-const Header: React.SFC<HeaderProps> = ({ title }) => (
-  <header>
-    <div>
-      <h1>
-        <Link to="/">{title}</Link>
-      </h1>
-    </div>
+import styles from './Header.module.scss';
+import Wrapper from '../wrapper/Wrapper';
+
+const Header: React.SFC<{ title: string }> = ({ title }) => (
+  <header className={styles.header}>
+    <Wrapper>
+      <h1>{title}</h1>
+    </Wrapper>
   </header>
 );
 

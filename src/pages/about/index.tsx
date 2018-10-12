@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
-import IndexLayout from '../layouts/index/IndexLayout';
+import IndexLayout from '../../layouts/index/IndexLayout';
 
-const SecondPage = () => (
+const AboutPage = () => (
   <IndexLayout>
     <h1>Hi from the second page</h1>
     <p>Welcome to page 2</p>
@@ -10,4 +10,4 @@ const SecondPage = () => (
   </IndexLayout>
 );
 
-export default SecondPage;
+export default AboutPage;

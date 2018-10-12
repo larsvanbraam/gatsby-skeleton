@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Gatsby Skeleton',
-    description: 'A gatsby skeleton'
+    description: 'A gatsby skeleton',
   },
   plugins: [
     {
@@ -14,6 +14,14 @@ module.exports = {
         theme_color: '#663399',
         display: 'minimal-ui',
         icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        postCssPlugins: [require('autoprefixer')],
+        data: '@import "src/styles/util.scss";',
+        includePaths: ['src'],
       },
     },
     'gatsby-plugin-react-helmet',

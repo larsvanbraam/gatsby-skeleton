@@ -1,0 +1,10 @@
+@import '~normalize.css';
+
+@import 'layout/base';
+
+@import 'types/copy.scss';
+@import 'types/heading.scss';
+
+html {
+  font-family: Arial;
+}
