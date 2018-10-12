@@ -5,6 +5,7 @@
   "author": "Lars van Braam <larsvanbraam@gmail.com>",
   "dependencies": {
     "autoprefixer": "^9.1.5",
+    "classnames": "^2.2.6",
     "gatsby": "^2.0.19",
     "gatsby-plugin-manifest": "^2.0.5",
     "gatsby-plugin-offline": "^2.0.5",
@@ -36,6 +37,7 @@
     "type-check": "tsc"
   },
   "devDependencies": {
+    "@types/classnames": "^2.2.6",
     "@types/react-helmet": "^5.0.7",
     "prettier": "^1.14.2",
     "tslint": "^5.11.0",

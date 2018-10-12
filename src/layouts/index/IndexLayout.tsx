@@ -3,9 +3,8 @@ import '../../styles/screen.scss';
 import * as React from 'react';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
-
-import Header from '../../components/header/Header';
-import Wrapper from '../../components/wrapper/Wrapper';
+import Header from '../../components/layout/header/Header';
+import Wrapper from '../../components/layout/wrapper/Wrapper';
 
 interface IStaticQueryProps {
   site: {

@@ -1,13 +1,17 @@
 import * as React from 'react';
-import { Link } from 'gatsby';
 import IndexLayout from '../layouts/index/IndexLayout';
+import classNames from 'classnames';
+import style from './index.module.scss';
+import PageLayout from '../layouts/page/PageLayout';
+import PrimaryButton from '../components/general/button/primary-button/PrimaryButton';
 
 const IndexPage = () => (
   <IndexLayout>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/about/">Go to page 2</Link>
+    <PageLayout>
+      <h1 className={classNames('heading-01', style.heading)}>Hi people</h1>
+      <p className={classNames('copy-01', style.copy)}>Welcome to your new Gatsby site.</p>
+      <PrimaryButton to="/about">About page</PrimaryButton>
+    </PageLayout>
   </IndexLayout>
 );
 
