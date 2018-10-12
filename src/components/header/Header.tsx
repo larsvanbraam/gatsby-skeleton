@@ -1,15 +1,12 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 import { HeaderProps } from './HeaderProps';
-import styles from './HeaderStyles';
 
 const Header: React.SFC<HeaderProps> = ({ title }) => (
-  <header className={styles.header}>
-    <div className={styles.innerHeader}>
+  <header>
+    <div>
       <h1>
-        <Link to="/" className={styles.link}>
-          {title}
-        </Link>
+        <Link to="/">{title}</Link>
       </h1>
     </div>
   </header>

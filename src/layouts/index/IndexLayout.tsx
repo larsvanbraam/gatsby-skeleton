@@ -1,21 +1,13 @@
+import 'normalize.css';
+
 import * as React from 'react';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
+import { IndexLayoutProps, IStaticQueryProps } from './IndexLayoutProps';
 
-import 'normalize.css';
+import Header from '../../components/header/Header';
 
-import Header from '../components/header';
-
-type StaticQueryProps = {
-  site: {
-    siteMetadata: {
-      title: string;
-      description: string;
-    };
-  };
-};
-
-const IndexLayout: React.SFC = ({ children }) => (
+const IndexLayout: React.SFC<IndexLayoutProps> = ({ children }) => (
   <StaticQuery
     query={graphql`
       query IndexLayoutQuery {
@@ -27,7 +19,7 @@ const IndexLayout: React.SFC = ({ children }) => (
         }
       }
     `}
-    render={(data: StaticQueryProps) => (
+    render={(data: IStaticQueryProps) => (
       <div>
         <Helmet
           title={data.site.siteMetadata.title}

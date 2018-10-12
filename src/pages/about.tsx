@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
-import IndexLayout from '../layouts/IndexLayout';
+import IndexLayout from '../layouts/index/IndexLayout';
 
 const SecondPage = () => (
   <IndexLayout>
