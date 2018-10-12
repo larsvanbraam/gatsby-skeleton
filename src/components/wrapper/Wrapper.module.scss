@@ -1,8 +1,8 @@
 .wrapper {
   @include size(100%, auto);
-  max-width: 102rem;
+  max-width: calc(100rem + #{$gutterSize});
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: $gutterSize;
+  padding-right: $gutterSize;
 }
