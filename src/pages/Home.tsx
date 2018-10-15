@@ -1,19 +1,26 @@
 import React from 'react';
-import IndexLayout from '../layouts/index';
+import { FormattedMessage } from 'react-intl';
 import classNames from 'classnames';
+import IndexLayout from '../layouts/index';
 import PageLayout from '../layouts/page';
 import PrimaryButton from '../components/general/button/primary-button';
 
 import style from './Home.module.scss';
 
-const Index = () => (
-  <IndexLayout>
-    <PageLayout>
-      <h1 className={classNames('heading-01', style.heading)}>Hi people</h1>
-      <p className={classNames('copy-01', style.copy)}>Welcome to your new Gatsby site.</p>
-      <PrimaryButton to="/about">About page</PrimaryButton>
-    </PageLayout>
-  </IndexLayout>
-);
+const Index = ({ pathContext: { locale } }) => {
+  return (
+    <IndexLayout locale={locale}>
+      <PageLayout>
+        <h1 className={classNames('heading-01', style.heading)}>
+          <FormattedMessage id="home.heading" />
+        </h1>
+        <p className={classNames('copy-01', style.copy)}>
+          <FormattedMessage id="home.copy" />
+        </p>
+        <PrimaryButton to="/about">About page</PrimaryButton>
+      </PageLayout>
+    </IndexLayout>
+  );
+};
 
 export default Index;

@@ -5,3 +5,20 @@
   line-height: 5rem;
   padding: 0 1rem;
 }
+
+.inner-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.language-selector {
+  display: inline-block;
+
+  a {
+    color: white;
+
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+}

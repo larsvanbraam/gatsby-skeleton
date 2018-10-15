@@ -5,12 +5,17 @@ import PageLayout from '../../layouts/page';
 import PrimaryButton from '../../components/general/button/primary-button';
 
 import styles from './About.module.scss';
+import { FormattedMessage } from 'react-intl';
 
-const AboutPage = () => (
-  <IndexLayout>
+const AboutPage = ({ pathContext: { locale } }) => (
+  <IndexLayout locale={locale}>
     <PageLayout>
-      <h1 className={classNames('heading-01', styles.heading)}>Hi from the second page</h1>
-      <p className={classNames('copy-01', styles.copy)}>Welcome to page 2</p>
+      <h1 className={classNames('heading-01', styles.heading)}>
+        <FormattedMessage id="about.heading" />
+      </h1>
+      <p className={classNames('copy-01', styles.copy)}>
+        <FormattedMessage id="about.copy" />
+      </p>
       <PrimaryButton to="/">Home</PrimaryButton>
     </PageLayout>
   </IndexLayout>
