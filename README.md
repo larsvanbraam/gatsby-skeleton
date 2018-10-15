@@ -49,20 +49,20 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 ## 🧐 What's inside?
 
   1.  Gatsby-plugins: 
-    1. **gatsby-plugin-manifest**: Output a manifest file for your application.
-    2. **gatsby-plugin-offline**: Create a service worker to speed up your site and make it available offline.
-    3. **gatsby-plugin-react-helmet**: Modify your sites head tag.
-    4. **gatsby-plugin-sass**: Add support for scss in your application (including autoprefixer).
-    5. **gatsby-plugin-typescript**: Add support for typescript in your application.
-    6. **gatsby-plugin-web-font-loader**: Add support for easy loading of web-fonts.
+     1. **gatsby-plugin-manifest**: Output a manifest file for your application.
+     2. **gatsby-plugin-offline**: Create a service worker to speed up your site and make it available offline.
+     3. **gatsby-plugin-react-helmet**: Modify your sites head tag.
+     4. **gatsby-plugin-sass**: Add support for scss in your application (including autoprefixer).
+     5. **gatsby-plugin-typescript**: Add support for typescript in your application.
+     6. **gatsby-plugin-web-font-loader**: Add support for easy loading of web-fonts.
   2. Other
 	 1. **react-intl**: Add localization to your application.
 	 2. **seng-scss**: Add usefull scss includes and mixins.
 	 3. **normalize.css**: Normalize the css.
 	 4. **classnames**: Merge classnames on your react elements.
   3. Dev dependencies
-    1. **prettier**: (airbnb standards).
-    2. **tslint**: (airbnb standards).
+     1. **prettier**: (airbnb standards).
+     2. **tslint**: (airbnb standards).
     
 ## 🎓 Learning Gatsby
 
