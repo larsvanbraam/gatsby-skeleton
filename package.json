@@ -4,7 +4,6 @@
   "version": "1.0.0",
   "author": "Lars van Braam <larsvanbraam@gmail.com>",
   "dependencies": {
-    "@types/react-intl": "^2.3.11",
     "autoprefixer": "^9.1.5",
     "classnames": "^2.2.6",
     "gatsby": "^2.0.19",
@@ -26,7 +25,8 @@
   "keywords": [
     "gatsby",
     "skeleton",
-    "typescript"
+    "typescript",
+    "scss"
   ],
   "license": "MIT",
   "scripts": {
@@ -40,6 +40,7 @@
   "devDependencies": {
     "@types/classnames": "^2.2.6",
     "@types/react-helmet": "^5.0.7",
+    "@types/react-intl": "^2.3.11",
     "prettier": "^1.14.2",
     "tslint": "^5.11.0",
     "tslint-config-airbnb": "^5.11.0",
