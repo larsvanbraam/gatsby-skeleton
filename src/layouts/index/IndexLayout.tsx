@@ -1,46 +1,44 @@
 import '../../styles/screen.scss';
 
-import React from 'react';
+import React, { Component } from 'react';
 import Helmet from 'react-helmet';
-import { StaticQuery, graphql } from 'gatsby';
-import Header from '../../components/layout/header/Header';
-import Wrapper from '../../components/layout/wrapper/Wrapper';
+import { graphql, StaticQuery } from 'gatsby';
+import Header from '../../components/layout/header';
+import Wrapper from '../../components/layout/wrapper';
 
-interface IStaticQueryProps {
-  site: {
-    siteMetadata: {
-      title: string;
-      description: string;
-    };
-  };
-}
+import styles from './IndexLayout.module.scss';
 
-const IndexLayout: React.SFC = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query IndexLayoutQuery {
-        site {
-          siteMetadata {
-            title
-            description
+export default class IndexLayout extends Component {
+  public render() {
+    return (
+      <StaticQuery
+        query={graphql`
+          query IndexLayoutQuery {
+            site {
+              siteMetadata {
+                title
+                description
+              }
+            }
           }
-        }
-      }
-    `}
-    render={(data: IStaticQueryProps) => (
-      <div>
-        <Helmet
-          title={data.site.siteMetadata.title}
-          meta={[
-            { name: 'description', content: data.site.siteMetadata.description },
-            { name: 'keywords', content: 'gatsbyjs, gatsby, javascript, sample, something' },
-          ]}
-        />
-        <Header title={data.site.siteMetadata.title} />
-        <Wrapper>{children}</Wrapper>
-      </div>
-    )}
-  />
-);
-
-export default IndexLayout;
+        `}
+        render={({ site }) => {
+          const { title, description, keywords } = site.siteMetadata;
+          return (
+            <div className={styles.wrapper}>
+              <Helmet
+                title={title}
+                meta={[
+                  { name: 'description', content: description },
+                  { name: 'keywords', content: keywords },
+                ]}
+              />
+              <Header title={title} />
+              <Wrapper>{this.props.children}</Wrapper>
+            </div>
+          );
+        }}
+      />
+    );
+  }
+}

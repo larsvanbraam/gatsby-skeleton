@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Gatsby Skeleton',
     description: 'A gatsby skeleton',
+    keywords: 'Gatsby, typescript, scss',
   },
   plugins: [
     {

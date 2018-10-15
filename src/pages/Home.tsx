@@ -1,11 +1,12 @@
 import React from 'react';
-import IndexLayout from '../layouts/index/IndexLayout';
+import IndexLayout from '../layouts/index';
 import classNames from 'classnames';
-import style from './index.module.scss';
-import PageLayout from '../layouts/page/PageLayout';
-import PrimaryButton from '../components/general/button/primary-button/PrimaryButton';
+import PageLayout from '../layouts/page';
+import PrimaryButton from '../components/general/button/primary-button';
 
-const IndexPage = () => (
+import style from './Home.module.scss';
+
+const Index = () => (
   <IndexLayout>
     <PageLayout>
       <h1 className={classNames('heading-01', style.heading)}>Hi people</h1>
@@ -15,4 +16,4 @@ const IndexPage = () => (
   </IndexLayout>
 );
 
-export default IndexPage;
+export default Index;

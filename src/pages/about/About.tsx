@@ -1,9 +1,10 @@
 import React from 'react';
 import classNames from 'classnames';
-import IndexLayout from '../../layouts/index/IndexLayout';
-import styles from './about.module.scss';
-import PageLayout from '../../layouts/page/PageLayout';
-import PrimaryButton from '../../components/general/button/primary-button/PrimaryButton';
+import IndexLayout from '../../layouts/index';
+import PageLayout from '../../layouts/page';
+import PrimaryButton from '../../components/general/button/primary-button';
+
+import styles from './About.module.scss';
 
 const AboutPage = () => (
   <IndexLayout>
